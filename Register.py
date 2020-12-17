@@ -59,3 +59,24 @@ class MEMWB:
 
     def instReset(self):
         self.inst = ""
+
+class ForwardUnit:
+    def __init__(self):
+        self.ForwardA = "00"
+        self.ForwardB = "00"
+
+    def reset(self):
+        self.ForwardA = "00"
+        self.ForwardB = "00"
+
+class HazardDetectionUnit:
+    def __init__(self):
+        self.PCWrite = 1
+        self.IFIDWrite = 1
+        self.IDEXFlush = 0
+
+    def reset(self):
+        self.PCWrite = 1
+        self.IFIDWrite = 1
+        self.IDEXFlush = 0
+    
